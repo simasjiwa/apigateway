@@ -52,7 +52,7 @@ $.ajax({
 ##### Endpoint
 GET
 ```sh
-/rest/v1/getlistproductpaspol
+/rest/v1/getlistproduct
 ```
 #### URL Params Required:
 ##### -Header
@@ -65,7 +65,7 @@ GET
 QJuery Ajax Call 
 ```sh
 $.ajax({
-    url: "/rest/v1/getlistproductpaspol",
+    url: "/rest/v1/getlistproduct",
     headers: {
         "token": "5D89006A21776A45E050A8C04E0A33D8",
         "clienId":"56c217cd-0bea-4f64-8ae2-2db0a71fea35"
