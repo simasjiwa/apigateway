@@ -386,7 +386,7 @@ $.ajax({
           "productID": "1",
           "productPackageID": "1",
           "premium": "7500",
-          "referenceCode": "PASPOLXX001",
+          "referenceCode": "PARTNERXX001",
           "transactionDate": "31/01/2017",
           "voucherCode": "ULTAH2ASJ",
           "policyHolder": {
@@ -433,7 +433,7 @@ success
     "message": "Success",
     "data": {
         "linkPolicy": "https://klikasuransiku.com/downloadDirectPolicy?transIdMerchant=2017122803041&uid=5D89006A21776A45E050A8C04E0A33D8&pid=e3d46ec4-277e-4eaf-addb-04d9c604ba3d",
-        "referenceCode": "PASPOLXX001",
+        "referenceCode": "PARTNERXX001",
         "policyNo": "171950000017"
     }
 }
