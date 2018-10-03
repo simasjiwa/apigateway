@@ -35,12 +35,12 @@ $.ajax({
 #### Sample Response
 | Params | Data Type |
 |--|--|
-|clientId| [text] |
+|clienId| [text] |
 |token|[text] | 
 
 ```sh
 {
-    "clientId": "5D89996A21776A85E070U8C04E0A33D8",
+    "clienId": "5D89996A21776A85E070U8C04E0A33D8",
     "token": "d64dcfe5-1cgg-4981-b7bc-7c8a1o589bda"
 }
 ```
