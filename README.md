@@ -634,7 +634,6 @@ success
 }
 ```
 
-```
 ### Check Nik
 ##### Endpoint
 POST
