@@ -719,15 +719,16 @@ POST
 ##### -Body
 | Params | Data Type | Mandatory | Length | Description |
 |--|--|--|--|--|
-|criticalIllness| [number] | Y | | e.x 1 = yes; 0 = no |
-|activity|[number] | Y | | e.x 1 = yes; 0 = no |
-|extraPremi|[number] | Y | | e.x 1 = yes; 0 = no |
-|tinggi| [number] | Y |  | e.x 170 |
-|berat|[number] | Y | | e.x 70 |
-|inpatient|[number] | Y | | e.x 1 = yes; 0 = no |
-|healthy| [number] | Y |  | e.x 1 = yes; 0 = no |
-|pregnant|[number] | Y | | e.x 1 = yes; 0 = no |
-|insuredSex|[text] | Y | | e.x pria/male; wanita/female |
+|criticalIllness| [number] | Y | | Q: Apakah anda pernah didiagnosa, merasakan tanda atau gejala, melakukan perawatan rawat jalan atau rawat inap, melakukan prosedur pembedahan, atau melakukan konsultasi dan pemeriksaan dengan dokter umum atau dokter spesialis karena serangan beberapa penyakit berikut: Penyakit Jantung,Diabetes Mellitus ,Hipertensi ,Tumor ,Kista ,Kanker ,Aneurisma ,Penyakit Liver, Penyakit Paru, Penyakit Ginjal, Gagal Fungsi Organ, Kelainan Darah, Gangguan Autoimun,Penyakit Sistem Saraf, Stroke, Mini-Stroke/Transient Ischemic Attack , Epilepsy, Infeksi menular seksual, atau HIV-AIDS? e.x 1 = yes; 0 = no |
+|activity|[number] | Y | | Q: Apakah anda memiliki pekerjaan, hobby, atau terlibat dengan aktifitas dengan risiko tinggi untuk terjadinya kecelakaan atau penyakit? e.x 1 = yes; 0 = no |
+|extraPremi|[number] | Y | | Q: Apakah pengajuan asuransi anda pernah ditolak, ditunda, dimodifikasi manfaatnya, atau diberikan tambahan premi karena alasan kesehatan? e.x 1 = yes; 0 = no |
+|tinggi| [number] | Y |  | Q: Berapa tinggi badan Anda? e.x 170 |
+|berat|[number] | Y | | Q: Berapa tinggi badan Anda? e.x 70 |
+|inpatient|[number] | Y | | Q: Apakah kamu (Penerima Perlindungan) sedang dirawat di rumah sakit? e.x 1 = yes; 0 = no |
+|healthy| [number] | Y |  | Q: Apakah kamu (Penerima Perlindungan) dalam keadaan sehat? e.x 1 = yes; 0 = no |
+|pregnant|[number] | Y | | Q: Apakah kamu (Penerima Perlindungan) sedang hamil? e.x 1 = yes; 0 = no |
+|prenatal|[number] | Y | | Q: Apakah usia kandungan kamu (Penerima Perlindungan) < 7 Bulan/28 Minggu? e.x 1 = yes; 0 = no |
+|insuredSex|[text] | Y | | Q: Jenis kelamin tertanggung ? e.x pria/male; wanita/female |
 
 #### Sample Call
 ```sh
