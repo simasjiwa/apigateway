@@ -719,14 +719,14 @@ POST
 ##### -Body
 | Params | Data Type | Mandatory | Length | Description |
 |--|--|--|--|--|
-|criticalIllness| [boolean] | Y | | e.x 1 = yes; 0 = no |
-|activity|[boolean] | Y | | e.x 1 = yes; 0 = no |
-|extraPremi|[boolean] | Y | | e.x 1 = yes; 0 = no |
+|criticalIllness| [number] | Y | | e.x 1 = yes; 0 = no |
+|activity|[number] | Y | | e.x 1 = yes; 0 = no |
+|extraPremi|[number] | Y | | e.x 1 = yes; 0 = no |
 |tinggi| [number] | Y |  | e.x 170 |
 |berat|[number] | Y | | e.x 70 |
-|inpatient|[boolean] | Y | | e.x 1 = yes; 0 = no |
-|healthy| [boolean] | Y |  | e.x 1 = yes; 0 = no |
-|pregnant|[boolean] | Y | | e.x 1 = yes; 0 = no |
+|inpatient|[number] | Y | | e.x 1 = yes; 0 = no |
+|healthy| [number] | Y |  | e.x 1 = yes; 0 = no |
+|pregnant|[number] | Y | | e.x 1 = yes; 0 = no |
 |insuredSex|[text] | Y | | e.x pria/male; wanita/female |
 
 #### Sample Call
