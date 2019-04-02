@@ -340,6 +340,8 @@ POST
 |--|--|--|--|--|--|
 |productID| | [number] | Y | | |
 |productPackageId| |[number] | Y | | |
+|insPeriod| |[number] | Y | | |
+|insPeriodType| |[text] | Y | | |
 |premium| |[number]| Y | | |
 |referenceCode| |[text] | Y | 20 | |
 |transactionDate| |[date] | Y | | format dd/MM/yyyy |
@@ -396,6 +398,8 @@ $.ajax({
     data: { 
           "productID": "1",
           "productPackageID": "1",
+          "insPeriod": "1",
+          "insPeriodType": "Y",
           "premium": "7500",
           "referenceCode": "PARTNERXX001",
           "transactionDate": "31/01/2017",
