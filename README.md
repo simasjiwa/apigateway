@@ -810,3 +810,64 @@ $.ajax({
 ```sh
 true
 ```
+
+### Get List Pertanyaan
+##### Endpoint
+POST
+```sh
+/rest/v1/getListPertanyaan
+```
+
+#### URL Params Required:
+##### -Header
+| Params | Data Type | Mandatory | Length | Description |
+|--|--|--|--|--|
+|token| [text] | Y | | |
+|clienId|[text] | Y | | 
+##### -Body
+| Params | Data Type | Mandatory | Length | Description |
+|--|--|--|--|--|
+|productID| [number] | Y | | e.x : 3 |
+|productPackageID|[number] | Y | | e.x : 1 |
+|sex|[text] | Y | | insured Sex e.x pria/male; wanita/female |
+
+#### Sample Call
+```sh
+$.ajax({
+    url: "/rest/v1/cekNik",
+    dataType: "json",
+    type : "POST",
+    data: {
+    "productID":3,
+    "productPackageID":1,
+    "sex":"male"
+    },
+    success : function(response) {
+      console.log(response);
+    }
+  });
+```
+
+##### Sample response:
+success
+```sh
+[
+    {
+        "YES_ACTION": "STOP",
+        "QUESTION_TYPE": "YES/NO",
+        "QUESTION_ID": 6,
+        "QUESTION_NUMBER": 1,
+        "NO_ACTION": "2",
+        "QUESTION": "Apakah penerima perlindungan sedang dirawat di rumah sakit?"
+    },
+    {
+        "YES_ACTION": "CONTINUE",
+        "QUESTION_TYPE": "YES/NO",
+        "QUESTION_ID": 7,
+        "QUESTION_NUMBER": 2,
+        "NO_ACTION": "STOP",
+        "QUESTION": "Apakah penerima perlindungan dalam keadaan sehat?"
+    }
+]
+```
+
