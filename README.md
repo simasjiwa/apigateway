@@ -469,15 +469,15 @@ success
 failed
 ```sh
 {
-    "status": 601,
-    "message": "Nomor Identitas Pemegang Polis tidak Valid",
+    "status": 401,
+    "message": "Gagal Input Polis",
     "data": null
 }
 ```
 ```sh
 {
-    "status": 602,
-    "message": "Nomor Identitas Tertanggung tidak Valid",
+    "status": 402,
+    "message": "Gagal Kirim Polis",
     "data": null
 }
 ```
@@ -490,8 +490,15 @@ failed
 ```
 ```sh
 {
-    "status": 401,
-    "message": "Gagal Input Polis",
+    "status": 601,
+    "message": "Nomor Identitas Pemegang Polis tidak Valid",
+    "data": null
+}
+```
+```sh
+{
+    "status": 602,
+    "message": "Nomor Identitas Tertanggung tidak Valid",
     "data": null
 }
 ```
@@ -509,7 +516,55 @@ failed
     "data": null
 }
 ```
-
+```sh
+{
+    "status": 605,
+    "message": "Jenis Kelamin Tidak Sesuai Dengan Ketentuan Produk",
+    "data": null
+}
+```
+```sh
+{
+    "status": 606,
+    "message": "Usia Tertanggung tidak Valid",
+    "data": null
+}
+```
+```sh
+{
+    "status": 607,
+    "message": "Usia Pemegang Polis tidak Valid",
+    "data": null
+}
+```
+```sh
+{
+    "status": 608,
+    "message": "Produk tidak Valid",
+    "data": null
+}
+```
+```sh
+{
+    "status": 609,
+    "message": "Ahli Waris tidak Valid",
+    "data": null
+}
+```
+```sh
+{
+    "status": 610,
+    "message": "City ID harus diisi",
+    "data": null
+}
+```
+```sh
+{
+    "status": 611,
+    "message": "Province ID harus diisi",
+    "data": null
+}
+```
 ### Check Blacklist
 ##### Endpoint
 POST
