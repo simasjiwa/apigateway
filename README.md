@@ -889,7 +889,7 @@ POST
 #### Sample Call
 ```sh
 $.ajax({
-    url: "/rest/v1/cekNik",
+    url: "/rest/v1/getListPertanyaan",
     dataType: "json",
     type : "POST",
     data: {
@@ -926,3 +926,55 @@ success
 ]
 ```
 
+
+### Check Simultan Ecomm
+##### Endpoint
+POST
+```sh
+/rest/v1/ceksimultanecomm
+```
+
+#### URL Params Required:
+##### -Header
+| Params | Data Type | Mandatory | Length | Description |
+|--|--|--|--|--|
+|token| [text] | Y | | |
+|clienId|[text] | Y | | 
+##### -Body
+| Params | Data Type | Mandatory | Length | Description |
+|--|--|--|--|--|
+|id_no| [String] | Y | | |
+|dob|[String] | Y | | |
+|name|[String] | Y | | |
+|prod_id|[String]|Y| | |
+|package_id|[String]|Y| | |
+
+#### Sample Call
+```sh
+$.ajax({
+    url: "/rest/v1/ceksimultanecomm",
+    dataType: "json",
+    type : "POST",
+    data: {
+    "id_no":"3173051005880001",
+    "dob":"10/05/1988",
+    "prod_id":"9",
+    "package_id":"5",
+    "name":"polis kho"
+    },
+    success : function(response) {
+      console.log(response);
+    }
+  });
+```
+
+##### Sample response:
+success
+```sh
+[
+    {
+    "result": 1,
+    "message": "Simultaneous checking status : Success!"
+    }
+]
+```
