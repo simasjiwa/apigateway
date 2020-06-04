@@ -368,6 +368,7 @@ POST
 || sex |[text] | Y | | e.x pria/male; wanita/female |
 || provinceId |[text] | Y | |  |
 || cityId |[text] | Y | | |
+|| relation |[text] | Y | | |
 |beneficiary| |[jsonObject] | Y | | |
 || fullName |[text] | Y | 50 | |
 || relation |[text] | Y | |e.x  istri, suami, anak, ayah, ibu, kakak, adik, orang tua|
@@ -426,7 +427,8 @@ $.ajax({
             "address": "Gedung Simas Jiwa Jl. Lombok No. 73 Jakarta Pusat 10350",
             "sex": "wanita",
             "provinceID": "1",
-            "cityID": "1"
+            "cityID": "1",
+            "relation":"kakak"
           },
           "beneficiary": {
             "fullName": "Mika Dhoe",
